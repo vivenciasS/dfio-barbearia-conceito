@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fallbacks de SEO: os valores finais são definidos pelo config.js. -->
+  <meta name="description" content="Site demonstrativo de uma empresa fictícia e modelo reutilizável para pequenos negócios.">
+  <meta name="theme-color" content="#0c0d0d">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Empresa Modelo | Site demonstrativo">
+  <meta property="og:description" content="Modelo reutilizável para apresentar uma pequena empresa, seus serviços e formas de contato.">
+  <meta property="og:site_name" content="Empresa Modelo">
+  <title>Empresa Modelo | Site demonstrativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+  <header class="header" id="inicio">
+    <div class="container header__content">
+      <a class="logo js-company-logo" href="#inicio" aria-label="Voltar ao inicio">
+        <span class="logo__mark" aria-hidden="true"><span data-company-initials>EM</span></span>
+        <span data-company-logo></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="main-menu" aria-label="Navegação principal">
+        <p class="nav__title">Navegação</p>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a class="nav__button" href="#contato">Entrar em contato</a>
+      </nav>
+      <button class="nav-backdrop" type="button" aria-label="Fechar menu" tabindex="-1"></button>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__text">
+          <p class="eyebrow" data-config="company.slogan"></p>
+          <p class="demo-pill" data-demo-label></p>
+          <h1 id="hero-title"><span class="hero__title-main" data-config="content.hero.title"></span><br><span data-config="content.hero.titleHighlight"></span></h1>
+          <p class="hero__description" data-config="company.description"></p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#contato">Fale com a gente <span aria-hidden="true">→</span></a>
+            <a class="button button--ghost" href="#servicos">Conheça os serviços</a>
+          </div>
+          <ul class="hero__highlights" data-highlights aria-describedby="highlights-note"></ul>
+          <p class="hero__demo-note demo-only" id="highlights-note">Indicadores fictícios usados apenas como exemplo.</p>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__frame">
+            <div class="hero__monogram" data-config="company.monogram"></div>
+            <div class="hero__symbol">✦</div>
+            <p data-config="content.hero.visualTagline"></p>
+          </div>
+          <div class="hero__badge"><span>Desde</span><strong data-config="company.foundedYear"></strong><small class="demo-only">ano fictício</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicos" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-config="content.services.eyebrow"></p>
+            <h2 id="services-title" data-config="content.services.title"></h2>
+          </div>
+          <p data-config="content.services.description"></p>
+        </div>
+
+        <!-- Os cards são criados a partir de services no config.js. -->
+        <div class="services__grid" data-services aria-describedby="services-note"></div>
+        <p class="demo-note demo-only" id="services-note">Serviços, valores e destaques fictícios para fins de demonstração.</p>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__visual" aria-hidden="true">
+          <div class="about__panel about__panel--back"></div>
+          <div class="about__panel about__panel--front">
+            <span data-company-initials>EM</span>
+            <p data-config="content.about.visualPhrase"></p>
+          </div>
+          <div class="about__experience"><strong data-config="content.about.experienceValue"></strong><span><span data-config="content.about.experienceLabel"></span><small class="demo-only">Exemplo fictício</small></span></div>
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow" data-config="content.about.eyebrow"></p>
+          <h2 id="about-title" data-config="content.about.title"></h2>
+          <div data-about-paragraphs></div>
+          <ul class="about__list" data-about-features></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="depoimentos" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <div>
+            <p class="eyebrow" data-config="content.testimonials.eyebrow"></p>
+            <h2 id="testimonials-title" data-config="content.testimonials.title"></h2>
+          </div>
+          <p data-config="content.testimonials.description"></p>
+        </div>
+
+        <!-- Depoimentos de exemplo configurados em config.js. -->
+        <div class="testimonials__grid" data-testimonials></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato" aria-labelledby="contact-title" data-company-watermark>
+      <div class="container contact__content">
+        <div>
+          <p class="eyebrow" data-config="content.contact.eyebrow"></p>
+          <h2 id="contact-title" data-config="content.contact.title"></h2>
+          <p data-config="content.contact.description"></p>
+          <address class="contact__details">
+            <a data-phone-link><span class="contact__detail-label">Telefone</span><span data-config="contact.phone"></span></a>
+            <p><span class="contact__detail-label">Endereço</span><span data-config="contact.address"></span></p>
+            <p><span class="contact__detail-label">Horário</span><span data-config="contact.hours"></span></p>
+          </address>
+        </div>
+        <div class="contact__action">
+          <a class="button button--whatsapp" id="whatsapp-button" href="#contato" aria-describedby="whatsapp-help contact-notice">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 2a9.7 9.7 0 0 0-9.8 9.6c0 1.7.5 3.4 1.3 4.8L2 22l5.8-1.5c1.3.7 2.7 1.1 4.2 1.1a9.8 9.8 0 1 0 0-19.6Zm0 17.7c-1.3 0-2.6-.4-3.7-1l-.3-.2-3.4.9.9-3.3-.2-.3a7.8 7.8 0 1 1 6.7 3.9Zm4.3-5.8c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-1.4-.7-2.4-1.4-3.3-3-.2-.3.2-.5.6-1 .1-.2.1-.4 0-.6l-.7-1.7c-.2-.4-.4-.4-.6-.4H8c-.3 0-.6.1-.8.4-.8.9-1.2 1.9-1 3 .3 1.8 1.5 3.5 3 4.6 1.8 1.3 4.5 2.5 6.5 1.9 1-.3 1.7-1.3 1.8-2.2.1-.4.1-.8-.1-.9-.3-.2-.7-.3-1.1-.5Z"/>
+            </svg>
+            Chamar no WhatsApp
+          </a>
+          <p class="contact__helper demo-only" id="whatsapp-help">Contato fictício para demonstração.</p>
+        </div>
+      </div>
+      <p class="contact__notice" id="contact-notice" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <a class="logo js-company-logo" href="#inicio" aria-label="Voltar ao inicio">
+        <span class="logo__mark" aria-hidden="true"><span data-company-initials>EM</span></span>
+        <span data-company-logo></span>
+      </a>
+      <nav class="footer__social" data-social aria-label="Redes sociais"></nav>
+      <p class="demo-only">Site demonstrativo. Dados e conteúdos fictícios.</p>
+      <p>&copy; <span id="current-year"></span> <span data-config="company.name"></span>.</p>
+    </div>
+  </footer>
+
+  <!-- Para cada cliente, altere primeiro o config.js e depois as cores no início do style.css. -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

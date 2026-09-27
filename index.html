@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Conceito demonstrativo da D’Fio Barbearia em Gurupi - TO. Corte, barba e sobrancelha com agendamento pelo WhatsApp.">
+  <meta name="theme-color" content="#10100f">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="D’Fio Barbearia | Gurupi - TO">
+  <meta property="og:description" content="Corte, barba e sobrancelha em Gurupi - TO.">
+  <meta property="og:site_name" content="D’Fio Barbearia">
+  <title>D’Fio Barbearia | Gurupi - TO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <div class="demo-bar" data-config="content.notice"></div>
+
+  <header class="header" id="inicio">
+    <div class="container header__content">
+      <a class="logo js-company-logo" href="#inicio" aria-label="D’Fio Barbearia - início">
+        <span class="logo__mark" aria-hidden="true"><span data-config="company.initials">DF</span></span>
+        <span><strong data-config="company.logoText">D’Fio</strong> <span data-config="company.logoHighlight">Barbearia</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="main-menu" aria-label="Navegação principal">
+        <p class="nav__title">Menu</p>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#localizacao">Localização</a>
+        <a class="nav__button js-whatsapp" href="#agendamento">Agendar horário</a>
+      </nav>
+      <button class="nav-backdrop" type="button" aria-label="Fechar menu" tabindex="-1"></button>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__lines" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__copy">
+          <p class="eyebrow" data-config="content.hero.eyebrow"></p>
+          <h1 id="hero-title"><span data-config="content.hero.title"></span> <em data-config="content.hero.titleHighlight"></em></h1>
+          <p class="hero__description" data-config="content.hero.description"></p>
+          <div class="hero__actions">
+            <a class="button button--primary js-whatsapp" href="#agendamento">Agendar horário <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#servicos">Ver serviços <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <div class="hero__halo"></div>
+          <div class="hero__blade">
+            <span class="hero__monogram" data-config="company.initials">DF</span>
+            <span class="hero__art-label" data-config="content.hero.visualLabel"></span>
+          </div>
+        </div>
+      </div>
+      <p class="hero__city" aria-hidden="true">GURUPI <span>TO</span></p>
+    </section>
+
+    <section class="section services" id="servicos" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-config="content.services.eyebrow"></p>
+            <h2 id="services-title" data-config="content.services.title"></h2>
+          </div>
+          <p data-config="content.services.description"></p>
+        </div>
+        <div class="services__grid" data-services></div>
+      </div>
+    </section>
+
+    <section class="section location" id="localizacao" aria-labelledby="location-title">
+      <div class="container location__grid">
+        <div class="location__intro">
+          <p class="eyebrow" data-config="content.location.eyebrow"></p>
+          <h2 id="location-title" data-config="content.location.title"></h2>
+          <p data-config="content.location.description"></p>
+          <a class="text-link" data-map-link target="_blank" rel="noopener noreferrer">Ver no mapa <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="location__details">
+          <article class="info-card">
+            <span class="info-card__index" aria-hidden="true">01</span>
+            <h3>Endereço</h3>
+            <address><span data-config="contact.addressLine"></span><br><span data-config="contact.addressCity"></span></address>
+          </article>
+          <article class="info-card">
+            <span class="info-card__index" aria-hidden="true">02</span>
+            <h3>Horários</h3>
+            <dl class="hours" data-hours></dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="agendamento" aria-labelledby="contact-title">
+      <div class="container contact__content">
+        <div>
+          <p class="eyebrow" data-config="content.contact.eyebrow"></p>
+          <h2 id="contact-title" data-config="content.contact.title"></h2>
+          <p data-config="content.contact.description"></p>
+        </div>
+        <a class="button button--dark js-whatsapp" href="#agendamento">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a9.7 9.7 0 0 0-9.8 9.6c0 1.7.5 3.4 1.3 4.8L2 22l5.8-1.5c1.3.7 2.7 1.1 4.2 1.1a9.8 9.8 0 1 0 0-19.6Zm0 17.7c-1.3 0-2.6-.4-3.7-1l-.3-.2-3.4.9.9-3.3-.2-.3a7.8 7.8 0 1 1 6.7 3.9Zm4.3-5.8c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-1.4-.7-2.4-1.4-3.3-3-.2-.3.2-.5.6-1 .1-.2.1-.4 0-.6l-.7-1.7c-.2-.4-.4-.4-.6-.4H8c-.3 0-.6.1-.8.4-.8.9-1.2 1.9-1 3 .3 1.8 1.5 3.5 3 4.6 1.8 1.3 4.5 2.5 6.5 1.9 1-.3 1.7-1.3 1.8-2.2.1-.4.1-.8-.1-.9-.3-.2-.7-.3-1.1-.5Z"/></svg>
+          Agendar horário
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <a class="logo js-company-logo" href="#inicio" aria-label="D’Fio Barbearia - início">
+        <span class="logo__mark" aria-hidden="true"><span data-config="company.initials">DF</span></span>
+        <span><strong data-config="company.logoText">D’Fio</strong> <span data-config="company.logoHighlight">Barbearia</span></span>
+      </a>
+      <p data-config="content.notice"></p>
+      <p>&copy; <span id="current-year"></span> <span data-config="company.name"></span></p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
